@@ -1,0 +1,35 @@
+
+img , table {
+    width: 290px;
+    margin-top: 15px;
+    border: solid black 1px;
+}
+
+table td {
+    border: solid black 1px;
+    text-align: center;
+}
+
+fieldset {
+    width: 155px;
+}
+
+.bt {
+    border: solid black 2px;
+    border-radius: 5px ;
+    text-decoration-line: none;
+}
+
+a:visited {
+    color:black;
+}
+
+
+.imcbt {
+    margin-bottom: 10px;
+}
+
+
+input{
+    margin-top: 5px;
+}

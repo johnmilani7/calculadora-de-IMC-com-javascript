@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="calcularIMC.js"></script>
+    <link rel="stylesheet" href="imc.css" media="all"> 
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <form id="formulario">
+        <fieldset>
+            <legend>Calculadora de IMC</legend>
+            <label for="kilos">Kilos:</label>
+            <input type="text" name="kilos" >
+            <label for="metros">Metros:</label>
+            <input type="text" name="metros" >
+            <label for="centimetros">Cm:</label>
+            <input type="text" name="centimetros" >
+            <label for="IMC">IMC:</label>
+            <input type="text" name="imc" disabled="disabled" class="imcbt">
+            <a href="#" onclick="calcularImc();" class="bt">Calcular</a>
+            <input type="text" name="classificacao" disabled="disabled">
+        </fieldset>
+    </form>
+    <table>
+        <tr><th>IMC</th><th>Classificação</th></tr>
+        <tr><td>&lt; 20</td><td>Abaixo do Peso</td></tr>
+        <tr><td>20 a 25</td><td>Peso ideal</td></tr>
+        <tr><td>25 a 30</td><td>Sobrepeso</td></tr>
+        <tr><td>30 a 35</td><td>Obesidade Moderada</td></tr>
+        <tr><td>35 a 40</td><td>Obesidade Severa</td></tr>
+        <tr><td>40 a 45</td><td>Obesidade Mórbida</td></tr>
+        <tr><td>&gt; 50</td><td>Super Obesidade</td></tr>        
+    </table>
+</body>
+</html>
